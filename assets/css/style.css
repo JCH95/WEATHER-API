@@ -24,6 +24,12 @@ header {
     padding: 5px;
     width: 20%;
 }
+
+#city {
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
 textarea {
     width: 85%;
     resize: none;
@@ -57,4 +63,8 @@ li {
     width: 85%;
     font-size: large;
     text-align: center;
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    list-style-type: none;
 }

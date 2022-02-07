@@ -30,10 +30,13 @@ searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
     var city = cityInput.value;
     localStorage.setItem("city-input", JSON.stringify(city));
+    listBuilder();
 });
 
 // Pulls city from locl storage and makes a new li element
-var getCity = JSON.parse(localStorage.getItem("city-input"));
-var list = document.createElement("li");
-list.textContent = getCity;
-cityList.appendChild(list);
+function listBuilder() {
+    var getCity = JSON.parse(localStorage.getItem("city-input"));
+    var list = document.createElement("li");
+    list.textContent = getCity;
+    cityList.appendChild(list);
+}

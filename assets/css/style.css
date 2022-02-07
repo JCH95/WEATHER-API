@@ -26,4 +26,35 @@ header {
 }
 textarea {
     width: 85%;
+    resize: none;
+    border-radius: 5px;
+    background-color: lightgrey;
+    font-size: x-large;
+    text-align: center;
+}
+
+.city-list {
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+}
+
+button {
+    background-color: skyblue;
+    border-radius: 5px;
+    text-align: center;
+    width: 85%;
+    padding: 5px;
+    color: white;
+    font-size: large;
+}
+
+li {
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 85%;
+    font-size: large;
+    text-align: center;
 }

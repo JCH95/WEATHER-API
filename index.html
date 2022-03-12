@@ -12,17 +12,28 @@
     <body>
         <header>
             <h1>Weather Forecast Dashboard</h1>
+            <p id = "currentDay"></p>
         </header>
 
+        <!-- Search Area and Button -->
         <div class="container">
             <h2>Search For A City:</h2>
             <div id="city">
                 <textarea placeholder="Enter City" id="city-input"></textarea>
-                <button id="city-search">Search</button>
+                <button id="city-button">Search</button>
             </div>
             <ul id="city-list">
 
             </ul>
+        </div>
+
+        <div class="container">
+            <h2 id="city-name"></h2>
+            <p id="temp"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+            <p id="uv"></p>
+            <p id="description"></p>
         </div>
 
         <script src="./assets/js/script.js"></script>

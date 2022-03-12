@@ -16,13 +16,28 @@ header {
     margin-left: auto;
 }
 
+.box {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.box :first-child {
+    align-self: center;
+}
 .container {
     border: 2px solid lightblue;
     border-radius: 5px;
     text-align: center;
     margin-right: auto;
     padding: 5px;
-    width: 20%;
+    width: 100%;
+}
+
+.search {
+    grid-column: 1;
 }
 
 #city {
@@ -55,6 +70,31 @@ button {
     padding: 5px;
     color: white;
     font-size: large;
+}
+
+.container2 {
+    width: 235%;
+    text-align: center;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.daily {
+    text-align: left;
+    grid-column: 2;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.tiny-box {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.weekly {
+    text-align: left;
+    width: 100%;
+    padding-left: 10%;
 }
 
 /* .li {

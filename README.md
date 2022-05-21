@@ -1,26 +1,14 @@
 # WEATHER-API
 
-# Pseudocode
-API call for UV index
-API call for One day index (long lat of city being searched)
-  call uv index api function, pass long lat from city
-API call 5 day forecast
-  api call function, return weather evry 3 hours
-  loop through objects in array, return objects matching time, return 5 days of data
-Create html thru js
-  Main div for 1 day forecast
-  Main div for 5 day forecast
-  Main div for holding saved cities
-  create vairable set to datat = api response (ie temp, wind, ect)
-  text.content = string of temp: concat temp data from api call
-  append to parent div (appendChild)
-Input box value (city) pass to var api call
-Create img html el, pass url in api response containing icon status
+This project is a weather app built through the use of weather APIs making requests to the open weather service. 
+When the user loads up the app, the user is met with a search bar where they can type in any city they choose. 
+Once they hit eneter, data will be loaded for the current day's forecast, along with the 5 day weather forecast 
+below the current stats. As an added bonus, on the left side where the search bar is, each city that the user 
+searches for is saved in a list that can be revisited upon clicking the desired city.
+
+## Screenshot
+![image](https://user-images.githubusercontent.com/94874020/169657820-b5821d6d-16de-43aa-9eab-b407d312928b.png)
 
 
-LocalStorage
-  -Push city into local storage, use for loop to create li elements for ul with cities in it
-  -Click event handler for when a city is clicked for extracting text
-    -Pass into functions searching for city data
-    
-Hard code html div containers holding 1 day, 5 day, search, buttons.
+## Deployed Website
+https://jch95.github.io/WEATHER-API-DASH/
